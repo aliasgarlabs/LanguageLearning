@@ -222,7 +222,7 @@ public class WordsList1 extends Fragment {
     }
 
     private void saveData() {
-        SharedPreferences sharedPreferences= Objects.requireNonNull(this.getActivity()).getSharedPreferences("SHARED_PREFS_1", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences= Objects.requireNonNull(this.getActivity()).getSharedPreferences(SHARED_PREFS_1, Context.MODE_PRIVATE);
      SharedPreferences.Editor editor=  sharedPreferences.edit();
      editor.putString(TEXT_MASTER_1,tvProgressMaster.getText().toString());
         editor.putString(TEXT_REVIEWING_1,tvProgressReview.getText().toString());
